@@ -1,4 +1,4 @@
-import { Card, grayDark, Grid, Row, Text } from "@nextui-org/react"
+import { Card, Grid, Row, Text } from "@nextui-org/react"
 import { pokeApi } from "api"
 import { Layout } from "components/layouts"
 import { PokemonListResponse, SmallPokemon } from "interfaces"
@@ -8,17 +8,12 @@ interface Props {
   pokemons: SmallPokemon[]
 }
 
-const HomePage: NextPage<Props> = ({ pokemons }) => {
-  console.log('✅✅✅✅✅✅   props   ✅✅✅✅✅')
-  console.log(pokemons)
+const HomePage: NextPage<Props> = ({ pokemons }) => { 
   return (
     <Layout title={'Pokedex'} >
         <Grid.Container gap={2} justify='flex-start'>
-          {pokemons?.map(p => {
-            let primeiraLetra = p.name.charAt(0).toUpperCase();
-            let nameCapital = primeiraLetra + p.name.slice(1);
-
-            return <Grid xs={6} sm={3} xl={2} key={p.id}>
+          {pokemons?.map(p =>  
+            <Grid xs={6} sm={3} xl={2} key={p.id}>
               <Card isPressable>
                 <Card.Body css={{ p: 12, backgroundColor:'#131313' }}>
                   <Card.Image
@@ -30,7 +25,7 @@ const HomePage: NextPage<Props> = ({ pokemons }) => {
                 </Card.Body>
                 <Card.Footer css={{ justifyItems: "flex-start" }}>
                   <Row wrap="wrap" justify="space-between" align="center">
-                    <Text b>{nameCapital}</Text>
+                    <Text transform="capitalize" b>{p.name}</Text>
                     <Text css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
                       #{p.id}
                     </Text>
@@ -38,7 +33,7 @@ const HomePage: NextPage<Props> = ({ pokemons }) => {
                 </Card.Footer>
               </Card>
             </Grid>
-        })}
+        )}
         </Grid.Container> 
     </Layout>
   )
@@ -50,7 +45,7 @@ const HomePage: NextPage<Props> = ({ pokemons }) => {
 //- The data can be publicly cached (not user-specific).
 //- The page must be pre-rendered (for SEO) and be very fast — getStaticProps generates HTML and JSON files, both of which can be cached by a CDN for performance. 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const {data} = await pokeApi.get<PokemonListResponse>('pokemon?limit=151')  
+  const {data} = await pokeApi.get<PokemonListResponse>('pokemon?limit=649')  
   const pokemons: SmallPokemon[] = data?.results?.map(pokemon => {
     const idPokemon = pokemon?.url.split('/')[6] || 0 
     return {
