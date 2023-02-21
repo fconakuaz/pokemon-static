@@ -30,7 +30,7 @@ export const NavBar = () => {
               </Button>  
             </Navbar.Item> 
             <Navbar.Item id="list">
-              <Button   auto as={Link} flat href="/">
+              <Button  auto as={Link} flat href="/">
               Pokemones
               </Button>  
             </Navbar.Item> 
