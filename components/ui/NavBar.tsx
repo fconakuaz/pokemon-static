@@ -25,12 +25,12 @@ export const NavBar = () => {
           
           <Navbar.Content hideIn="xs">                      
             <Navbar.Item id="list">
-              <Button   auto as={Link} light href="https://www.google.com">
+              <Button   auto as={Link} light href="/">
               Favoritos
               </Button>  
             </Navbar.Item> 
             <Navbar.Item id="list">
-              <Button   auto as={Link} flat href="https://www.google.com">
+              <Button   auto as={Link} flat href="/">
               Pokemones
               </Button>  
             </Navbar.Item> 
