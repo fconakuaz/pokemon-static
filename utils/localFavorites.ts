@@ -11,7 +11,7 @@ const toggleFavorite = ( id: number ) => { let favorites:number[] =
 }
 
 
-const existInFavorites = (id:number): boolean => {
+const existInFavorites = (id:number): boolean => { 
     if ( typeof window === 'undefined' ) return false
     const favorites:number[] = 
         JSON.parse ( localStorage.getItem('favorites') || '[]')    
