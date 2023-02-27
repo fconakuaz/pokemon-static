@@ -63,7 +63,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
             <Card.Header
               css={{ display: "flex", justifyContent: "space-between" }}
             >
-              <Text h1 transform="capitalize">
+              <Text h3 transform="capitalize">
                 {pokemon.name}
               </Text>
               {/* Botón favoritos */}
@@ -102,7 +102,6 @@ export const getStaticPaths: GetStaticPaths = async (ctx) => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
-
   const pokemon = await getPokemonInfo(id);
 
   if (!pokemon) {
