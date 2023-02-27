@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { Button, Card, Grid, Text } from "@nextui-org/react";
 import confetti from "canvas-confetti";
 
-import { localFavorites } from "utils";
+import { getPokemonInfo, localFavorites } from "utils";
 
 interface Props {
   pokemon: Pokemon;
@@ -101,11 +101,11 @@ export const getStaticPaths: GetStaticPaths = async (ctx) => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
-  const { data } = await pokeApi.get<Pokemon>(`pokemon/${id}`);
-
   return {
     props: {
-      pokemon: data,
+      // No se agrega Try / Catch ya que se ejecuta en build time
+      // lo cual hace que se detenga el proceso automáticamente
+      pokemon: await getPokemonInfo(id),
     },
   };
 };
