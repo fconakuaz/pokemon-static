@@ -1,7 +1,6 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { Layout } from "components/layouts";
 import { PokemonSprites } from "components/pokemon/PokemonSprites";
-import { pokeApi } from "api";
 import { Pokemon } from "interfaces";
 import { useEffect, useState } from "react";
 import { Button, Card, Grid, Text } from "@nextui-org/react";
@@ -88,25 +87,40 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
   );
 };
 
+// Los paths le van a decir a Next en Build time cuales serán todos los paths, siempre necesita al getStaticProps
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
   const pokemosn151 = [...Array(151)].map((value, index) => `${index + 1}`);
   // Estos son los paths que se generarán en el buildtime
   // cantidad de paths es la cantidad de páginas que se generarán
   return {
     paths: pokemosn151.map((id) => ({ params: { id } })),
-    fallback: false, // Se agrega false para forzar a que no entre si no existe
+    // fallback: false, // Se agrega false para forzar a que no entre si no existe
+    fallback: "blocking", // Se brinca al getStaticProps incluso si no se ha generado estáticamente
     // fallback: "blocking"  deja mostrar la página aunque no exista en el path
   };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
+
+  const pokemon = await getPokemonInfo(id);
+
+  if (!pokemon) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
   return {
     props: {
       // No se agrega Try / Catch ya que se ejecuta en build time
       // lo cual hace que se detenga el proceso automáticamente
-      pokemon: await getPokemonInfo(id),
+      pokemon,
     },
+    revalidate: 86400, // Se regenera cada 24 hrs (se mide en segundos) cáculo:  60 * 60 * 24 , agregar número entero no calcular
   };
 };
 

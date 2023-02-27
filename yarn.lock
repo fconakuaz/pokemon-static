@@ -525,6 +525,13 @@
   dependencies:
     "@swc/helpers" "^0.4.14"
 
+"@react-aria/ssr@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@react-aria/ssr/-/ssr-3.5.0.tgz#40c1270a75868185f72a88cafe37bd1392f690cb"
+  integrity sha512-h0MJdSWOd1qObLnJ8mprU31wI8tmKFJMuwT22MpWq6psisOOZaga6Ml4u6Ee6M6duWWISjXvqO4Sb/J0PBA+nQ==
+  dependencies:
+    "@swc/helpers" "^0.4.14"
+
 "@react-aria/table@3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@react-aria/table/-/table-3.5.0.tgz#e7d8bf14de8d7ccb76090fd4bf9338764ed52690"
