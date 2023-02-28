@@ -7,6 +7,7 @@ import { Button, Card, Grid, Text } from "@nextui-org/react";
 import confetti from "canvas-confetti";
 
 import { getPokemonInfo, localFavorites } from "utils";
+import PokemonSpecs from "components/pokemon/PokemonSpecs";
 
 interface Props {
   pokemon: Pokemon;
@@ -79,6 +80,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
             <Card.Body>
               <Text size={30}>Sprites</Text>
               <PokemonSprites pokemon={pokemon} />
+              <PokemonSpecs pokemon={pokemon} />
             </Card.Body>
           </Card>
         </Grid>
