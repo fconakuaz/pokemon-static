@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_bf23bb611ff0169"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -19,12 +22,24 @@
     "canvas-confetti": "^1.6.0",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
-    "next": "13.1.6",
+    "next": "^13.5.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
   },
   "devDependencies": {
-    "@types/canvas-confetti": "^1.6.0"
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.3.6",
+    "@storybook/addon-interactions": "^8.3.6",
+    "@storybook/addon-links": "^8.3.6",
+    "@storybook/addon-onboarding": "^8.3.6",
+    "@storybook/blocks": "^8.3.6",
+    "@storybook/nextjs": "^8.3.6",
+    "@storybook/react": "^8.3.6",
+    "@storybook/test": "^8.3.6",
+    "@types/canvas-confetti": "^1.6.0",
+    "chromatic": "^11.14.0",
+    "eslint-plugin-storybook": "^0.10.1",
+    "storybook": "^8.3.6"
   }
 }
