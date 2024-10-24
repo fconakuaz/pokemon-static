@@ -3,11 +3,13 @@ import { FC } from "react";
 import { Card, Grid, Row, Text } from "@nextui-org/react";
 import { useRouter } from "next/router";
 
-type Props = {
-  data: SmallPokemon;
-};
-
-export const PokemonCard: FC<Props> = ({ data: { id, img, name } }) => {
+export const PokemonCard: FC<SmallPokemon> = ({
+  id,
+  img,
+  name,
+  color,
+  background,
+}) => {
   const router = useRouter();
 
   const onClick = () => {
@@ -15,19 +17,37 @@ export const PokemonCard: FC<Props> = ({ data: { id, img, name } }) => {
   };
 
   return (
-    <Grid xs={6} sm={3} xl={2} key={id} onClick={onClick}>
+    <Grid
+      xs={6}
+      sm={3}
+      xl={2}
+      key={id}
+      style={{ minWidth: "250px" }}
+      onClick={onClick}
+    >
       <Card isPressable>
         <Card.Body css={{ p: 12, backgroundColor: "#131313" }}>
           <Card.Image src={img} objectFit="cover" height={140} alt={name} />
         </Card.Body>
-        <Card.Footer css={{ justifyItems: "flex-start" }}>
+        <Card.Footer
+          css={{
+            justifyItems: "flex-start",
+            background: background || undefined,
+          }}
+        >
           <Row wrap="wrap" justify="space-between" align="center">
-            <Text transform="capitalize" b>
+            <Text
+              transform="capitalize"
+              b
+              css={{
+                color: color || undefined,
+              }}
+            >
               {name}
             </Text>
             <Text
               css={{
-                color: "$accents7",
+                color: color || "$accents7",
                 fontWeight: "$semibold",
                 fontSize: "$sm",
               }}

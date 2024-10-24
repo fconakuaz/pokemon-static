@@ -14,7 +14,7 @@ const HomePage: NextPage<Props> = ({ pokemons }) => {
     <Layout title={"Pokedex"}>
       <Grid.Container gap={2} justify="flex-start">
         {pokemons?.map((p, i) => (
-          <PokemonCard key={i} data={p} />
+          <PokemonCard key={i} {...p} />
         ))}
       </Grid.Container>
     </Layout>

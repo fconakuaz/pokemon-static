@@ -1,0 +1,326 @@
+nextui-c-PJLV-iUDWNt-css {
+    color: var(--nextui-colors-text);
+    text-transform: capitalize;
+}
+b {
+    font-weight: var(--nextui-fontWeights-semibold);
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    -webkit-tap-highlight-color: transparent;
+}
+user agent stylesheet
+b {
+    font-weight: bold;
+}
+.nextui-c-dfbgCO-ijHOHeI-css {
+    flex-wrap: wrap;
+    --nextui--rowGap: calc(0* var(--nextui-space-lg));
+    margin-left: calc(0* var(--nextui-space-lg) / 2);
+    margin-right: calc(0* var(--nextui-space-lg) / 2);
+    justify-content: space-between;
+    align-items: center;
+}
+.nextui-c-cakKrd {
+    width: 100%;
+    height: auto;
+    padding: var(--nextui-space-sm);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: inherit;
+    border-bottom-left-radius: var(--nextui-radii-lg);
+    border-bottom-right-radius: var(--nextui-radii-lg);
+}
+.nextui-c-BDLTQ-iZxJaC-isPressable-true {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.nextui-c-BDLTQ {
+    --nextui--cardColor: var(--nextui-colors-backgroundContrast);
+    --nextui--cardTextColor: var(--nextui-colors-text);
+    margin: 0px;
+    padding: 0px;
+    border-radius: var(--nextui-radii-lg);
+    background: var(--nextui--cardColor);
+    color: var(--nextui--cardTextColor);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.nextui-c-kRHeuF-ienfGvA-css {
+    --nextui--gridGapUnit: calc(2* var(--nextui-space-3));
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: calc(-1* var(--nextui--gridGapUnit));
+    width: calc(100% + var(--nextui--gridGapUnit)* 2);
+}
+html, body {
+    background-color: var(--nextui-colors-background);
+    color: var(--nextui-colors-text);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-size: var(--nextui-fontSizes-base);
+    line-height: var(--nextui-lineHeights-md);
+    font-family: var(--nextui-fonts-sans);
+}
+style attribute {
+    color-scheme: dark;
+}
+:root {
+    --nextui--navbarHeight: 76px;
+    --nextui--navbarCompactHeight: calc(var(--nextui--navbarHeight)* 0.7);
+    --nextui--navbarTextColor: var(--nextui-colors-text);
+    --nextui--navbarBackgroundColor: var(--nextui-colors-background);
+    --nextui--navbarBlurBackgroundColor: var(--nextui-colors-backgroundAlpha);
+    --nextui--navbarItemMaxHeight: calc(var(--nextui--navbarHeight)* 0.5);
+    --nextui--navbarCompactItemMaxHeight: calc(var(--nextui--navbarHeight)* 0.5);
+    --nextui--navbarBorderColor: var(--nextui-colors-border);
+    --nextui--navbarBorderRadius: var(--nextui-radii-lg);
+    --nextui--navbarPadding: var(--nextui-space-10);
+    --nextui--navbarFloatingMargin: var(--nextui-space-10);
+    --nextui--navbarContainerMaxWidth: var(--nextui-breakpoints-lg);
+    --nextui--navbarShadow: var(--nextui-shadows-md);
+    --nextui--navbarBorderWeight: var(--nextui-borderWeights-light);
+    --nextui--navbarBlur: 10px;
+}
+.dark-theme {
+    --nextui-colors-background: var(--nextui-colors-black);
+    --nextui-colors-backgroundAlpha: rgba(0, 0, 0, 0.6);
+    --nextui-colors-foreground: var(--nextui-colors-white);
+    --nextui-colors-backgroundContrast: var(--nextui-colors-accents0);
+    --nextui-colors-blue50: #10253E;
+    --nextui-colors-blue100: #102C4C;
+    --nextui-colors-blue200: #0F3158;
+    --nextui-colors-blue300: #0D3868;
+    --nextui-colors-blue400: #0A4281;
+    --nextui-colors-blue500: #0952A5;
+    --nextui-colors-blue600: #0072F5;
+    --nextui-colors-blue700: #3694FF;
+    --nextui-colors-blue800: #3694FF;
+    --nextui-colors-blue900: #EAF4FF;
+    --nextui-colors-purple50: #1F0A33;
+    --nextui-colors-purple100: #240C3C;
+    --nextui-colors-purple200: #2E0F4D;
+    --nextui-colors-purple300: #3B1362;
+    --nextui-colors-purple400: #451773;
+    --nextui-colors-purple500: #571D91;
+    --nextui-colors-purple600: #7828C8;
+    --nextui-colors-purple700: #9750DD;
+    --nextui-colors-purple800: #B583E7;
+    --nextui-colors-purple900: #F7ECFC;
+    --nextui-colors-green50: #042F14;
+    --nextui-colors-green100: #06381B;
+    --nextui-colors-green200: #074A24;
+    --nextui-colors-green300: #0A6130;
+    --nextui-colors-green400: #0B7439;
+    --nextui-colors-green500: #0F9549;
+    --nextui-colors-green600: #17C964;
+    --nextui-colors-green700: #41EC8B;
+    --nextui-colors-green800: #78F2AD;
+    --nextui-colors-green900: #ECFDF4;
+    --nextui-colors-yellow50: #3A2503;
+    --nextui-colors-yellow100: #442B03;
+    --nextui-colors-yellow200: #583804;
+    --nextui-colors-yellow300: #704705;
+    --nextui-colors-yellow400: #845306;
+    --nextui-colors-yellow500: #A66908;
+    --nextui-colors-yellow600: #F5A524;
+    --nextui-colors-yellow700: #F6AD37;
+    --nextui-colors-yellow800: #F8C572;
+    --nextui-colors-yellow900: #FEF7EC;
+    --nextui-colors-red50: #300313;
+    --nextui-colors-red100: #300313;
+    --nextui-colors-red200: #44041A;
+    --nextui-colors-red300: #5C0523;
+    --nextui-colors-red400: #6F062B;
+    --nextui-colors-red500: #910838; 
+}
+:root, .nextui-t-bzCiFt {
+    --nextui-fonts-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --nextui-fonts-mono: Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+    --nextui-fontSizes-xs: 0.75rem;
+    --nextui-fontSizes-sm: 0.875rem;
+    --nextui-fontSizes-base: 1rem;
+    --nextui-fontSizes-md: 1rem;
+    --nextui-fontSizes-lg: 1.125rem;
+    --nextui-fontSizes-xl: 1.25rem;
+    --nextui-fontSizes-2xl: 1.5rem;
+    --nextui-fontSizes-3xl: 1.875rem;
+    --nextui-fontSizes-4xl: 2.25rem;
+    --nextui-fontSizes-5xl: 3rem;
+    --nextui-fontSizes-6xl: 3.75rem;
+    --nextui-fontSizes-7xl: 4.5rem;
+    --nextui-fontSizes-8xl: 6rem;
+    --nextui-fontSizes-9xl: 8rem;
+    --nextui-fontWeights-hairline: 100;
+    --nextui-fontWeights-thin: 200;
+    --nextui-fontWeights-light: 300;
+    --nextui-fontWeights-normal: 400;
+    --nextui-fontWeights-medium: 500;
+    --nextui-fontWeights-semibold: 600;
+    --nextui-fontWeights-bold: 700;
+    --nextui-fontWeights-extrabold: 800;
+    --nextui-fontWeights-black: 900;
+    --nextui-lineHeights-xs: 1;
+    --nextui-lineHeights-sm: 1.25;
+    --nextui-lineHeights-base: 1.5;
+    --nextui-lineHeights-md: 1.5;
+    --nextui-lineHeights-lg: 1.75;
+    --nextui-lineHeights-xl: 1.75;
+    --nextui-lineHeights-2xl: 2;
+    --nextui-lineHeights-3xl: 2.25;
+    --nextui-lineHeights-4xl: 2.5;
+    --nextui-lineHeights-5xl: 1;
+    --nextui-lineHeights-6xl: 1;
+    --nextui-lineHeights-7xl: 1;
+    --nextui-lineHeights-8xl: 1;
+    --nextui-lineHeights-9xl: 1;
+    --nextui-letterSpacings-tighter: -0.05em;
+    --nextui-letterSpacings-tight: -0.025em;
+    --nextui-letterSpacings-normal: 0;
+    --nextui-letterSpacings-wide: 0.025em;
+    --nextui-letterSpacings-wider: 0.05em;
+    --nextui-letterSpacings-widest: 0.1em;
+    --nextui-space-0: 0rem;
+    --nextui-space-1: 0.125rem;
+    --nextui-space-2: 0.25rem;
+    --nextui-space-3: 0.375rem;
+    --nextui-space-4: 0.5rem; 
+}
+html {
+    font-size: var(--nextui-fontSizes-base);
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    -webkit-tap-highlight-color: transparent;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    -webkit-tap-highlight-color: transparent;
+}
+::selection {
+    background-color: var(--nextui-colors-selection);
+}
+.nextui-c-dfbgCO-ijHOHeI-css {
+    flex-wrap: wrap;
+    --nextui--rowGap: calc(0* var(--nextui-space-lg));
+    margin-left: calc(0* var(--nextui-space-lg) / 2);
+    margin-right: calc(0* var(--nextui-space-lg) / 2);
+    justify-content: space-between;
+    align-items: center;
+}
+.nextui-c-dfbgCO-fGHEql-fluid-true {
+    width: 100%;
+}
+.nextui-c-dfbgCO {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+.nextui-c-cakKrd {
+    width: 100%;
+    height: auto;
+    padding: var(--nextui-space-sm);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: inherit;
+    border-bottom-left-radius: var(--nextui-radii-lg);
+    border-bottom-right-radius: var(--nextui-radii-lg);
+}
+.nextui-c-BDLTQ-iZxJaC-isPressable-true {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.nextui-c-BDLTQ {
+    --nextui--cardColor: var(--nextui-colors-backgroundContrast);
+    --nextui--cardTextColor: var(--nextui-colors-text);
+    margin: 0px;
+    padding: 0px;
+    border-radius: var(--nextui-radii-lg);
+    background: var(--nextui--cardColor);
+    color: var(--nextui--cardTextColor);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.nextui-c-kRHeuF-ienfGvA-css {
+    --nextui--gridGapUnit: calc(2* var(--nextui-space-3));
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: calc(-1* var(--nextui--gridGapUnit));
+    width: calc(100% + var(--nextui--gridGapUnit)* 2);
+}
+
+nextui-c-eFfoBo-iizVXog-css {
+    padding: 12px;
+    background-color: rgb(19, 19, 19);
+}
+.nextui-c-eFfoBo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex: 1 1 auto;
+    flex-direction: column;
+    place-content: inherit;
+    align-items: inherit;
+    padding-top: var(--nextui-space-lg);
+    padding-bottom: var(--nextui-space-lg);
+    padding-left: var(--nextui-space-sm);
+    padding-right: var(--nextui-space-sm);
+    overflow-y: auto;
+    position: relative;
+    text-align: left;
+}
+.nextui-c-BDLTQ-iZxJaC-isPressable-true {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.nextui-c-BDLTQ {
+    --nextui--cardColor: var(--nextui-colors-backgroundContrast);
+    --nextui--cardTextColor: var(--nextui-colors-text);
+    margin: 0px;
+    padding: 0px;
+    border-radius: var(--nextui-radii-lg);
+    background: var(--nextui--cardColor);
+    color: var(--nextui--cardTextColor);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.nextui-c-kRHeuF-ienfGvA-css {
+    --nextui--gridGapUnit: calc(2* var(--nextui-space-3));
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: calc(-1* var(--nextui--gridGapUnit));
+    width: calc(100% + var(--nextui--gridGapUnit)* 2);
+}
